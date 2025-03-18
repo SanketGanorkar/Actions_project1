@@ -28,7 +28,7 @@ jobs:
         run: npm install
 
       - name: Run ESLint
-        run: npx eslint . || true # Prevents stopping workflow if lint fails
+        run: npx eslint .
 
       - name: Run Tests (If Available)
         run: npm test || echo "No tests found"

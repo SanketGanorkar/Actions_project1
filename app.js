@@ -39,9 +39,10 @@ app.get("/users/:id", (req, res) => {
     });
   }
 
-  res.json({
+  // delibrately removed {} after ({data:user,})
+  res.json(
     data: user,
-  });
+  );
 });
 
 // Add a new user (POST request)
